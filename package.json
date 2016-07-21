@@ -6,7 +6,7 @@
     "url": "https://github.com/winsonc/angular2_boilerplate.git"
   },
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "tsc && gulp && concurrently \"npm run tsc:w\" \"npm run lite\" \"gulp watch\"",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
@@ -35,6 +35,9 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-sass": "^2.3.2",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
